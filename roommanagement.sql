@@ -6,17 +6,17 @@ USE roommanagement;
 -- Crear tabla de salas
 CREATE TABLE IF NOT EXISTS sala (
   idSala INT AUTO_INCREMENT PRIMARY KEY,
-  titulo VARCHAR(255) DEFAULT NULL,
+  nombre VARCHAR(255) DEFAULT NULL,
   descripcion VARCHAR(255) DEFAULT NULL,
   precio DECIMAL(10,2)
 );
 
 -- Insertar datos de ejemplo en la tabla sala
-INSERT INTO sala (titulo, descripcion, precio) VALUES ('Sala 1', 'Sala general 1', 49.99);
-INSERT INTO sala (titulo, descripcion, precio) VALUES ('Sala 2', 'Sala general 2', 49.99);
-INSERT INTO sala (titulo, descripcion, precio) VALUES ('Sala 3', 'Sala vip 1', 99.99);
-INSERT INTO sala (titulo, descripcion, precio) VALUES ('Sala 4', 'Sala vip 2', 99.99);
-INSERT INTO sala (titulo, descripcion, precio) VALUES ('Sala 5', 'Sala general 3', 49.99);
+INSERT INTO sala (nombre, descripcion, precio) VALUES ('Sala 1', 'Sala general 1', 49.99);
+INSERT INTO sala (nombre, descripcion, precio) VALUES ('Sala 2', 'Sala general 2', 49.99);
+INSERT INTO sala (nombre, descripcion, precio) VALUES ('Sala 3', 'Sala vip 1', 99.99);
+INSERT INTO sala (nombre, descripcion, precio) VALUES ('Sala 4', 'Sala vip 2', 99.99);
+INSERT INTO sala (nombre, descripcion, precio) VALUES ('Sala 5', 'Sala general 3', 49.99);
 
 -- Crear tabla de usuarios con el campo de contraseña
 CREATE TABLE IF NOT EXISTS usuario (

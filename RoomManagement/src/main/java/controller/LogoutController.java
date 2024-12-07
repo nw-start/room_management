@@ -1,4 +1,4 @@
-package controllerr;
+package controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
